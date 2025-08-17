@@ -2,5 +2,13 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image']
+  ssr: true,
+  nitro: {
+    preset: 'vercel-edge',
+  },
+  modules: [
+    '@nuxt/fonts', 
+    '@nuxt/icon', 
+    '@nuxt/image',
+  ],
 })
