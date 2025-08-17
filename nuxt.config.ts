@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      storyblokDeliveryVersion: process.env.STORYBLOK_DELIVERY_VERSION || 'published',
+    },
+  },
   ssr: true,
   nitro: {
     preset: 'vercel-edge',
