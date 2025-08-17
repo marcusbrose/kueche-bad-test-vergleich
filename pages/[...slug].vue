@@ -4,7 +4,7 @@ const route = useRoute()
 const url = route.path.substring(1) || 'home'
 const { pending, error, story } = await useAsyncStoryblok(url, {
   api: {
-    version: config.public.storyblokApiVersion as 'draft' | 'published' || 'published', // 'draft' or 'published'
+    version: config.public.storyblokDeliveryVersion as 'draft' | 'published' || 'published', // 'draft' or 'published'
   },
   bridge: {
     resolveRelations: [],
