@@ -10,5 +10,14 @@ export default defineNuxtConfig({
     '@nuxt/fonts', 
     '@nuxt/icon', 
     '@nuxt/image',
+    [
+      '@storyblok/nuxt',
+      {
+        accessToken: process.env.STORYBLOK_DELIVERY_API_TOKEN,
+        apiOptions: {
+          region: 'eu',
+        },
+      },
+    ],
   ],
 })
