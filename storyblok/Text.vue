@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const props = defineProps({ blok: Object })
 const { render } = useStoryblokRichText({
   // options like resolvers
