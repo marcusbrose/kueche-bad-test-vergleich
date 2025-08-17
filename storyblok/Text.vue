@@ -8,7 +8,7 @@ const root = () => render(props.blok.text)
 </script>
 
 <template>
-  <div class="prose">
+  <div class="prose" v-editable="blok">
     <root />
   </div>
 </template>
